@@ -374,8 +374,7 @@ elif page == "🤖  Predict Delay":
                 ['Monday','Tuesday','Wednesday','Thursday','Friday','Saturday','Sunday'])
 
         with c2:
-            hour = st.slider("Hour of Day", 0, 23, 8,
-                             format_func=lambda x: f"{x:02d}:00")
+            hour = st.slider("Hour of Day", 0, 23, 8)
             incident = st.selectbox("Incident Type",
                 sorted(df['Incident'].dropna().unique()))
 
