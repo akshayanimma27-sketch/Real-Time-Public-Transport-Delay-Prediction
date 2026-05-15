@@ -8,17 +8,6 @@ import joblib
 import os
 import warnings
 warnings.filterwarnings('ignore')
-import gdown
-import joblib
-
-file_id = "1rUcPww2N5LYmIuKIq0rMgjxbmf1-R3cf"
-
-url = f"https://drive.google.com/file/d/1rUcPww2N5LYmIuKIq0rMgjxbmf1-R3cf/view?usp=drive_linkid={file_id}"
-
-gdown.download(url, "sarima_model.pkl", quiet=False)
-
-model = joblib.load("sarima_model.pkl")
-
 # ── Page config ───────────────────────────────────────────────────────────────
 st.set_page_config(
     page_title="Toronto Bus Delay Forecasting",
