@@ -82,7 +82,7 @@ st.markdown("""
     .badge-high     { background:#FDE8E8; color:#B91C1C; padding:3px 12px; border-radius:99px; font-size:12px; font-weight:700; }
     .badge-severe   { background:#7F1D1D; color:#FEE2E2; padding:3px 12px; border-radius:99px; font-size:12px; font-weight:700; }
 
-    #MainMenu, footer, header { visibility: hidden; }
+    #MainMenu, footer,{ visibility: hidden; }
 </style>
 """, unsafe_allow_html=True)
 
