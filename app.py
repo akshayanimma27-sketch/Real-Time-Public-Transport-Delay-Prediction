@@ -18,9 +18,21 @@ st.set_page_config(
 
 st.markdown("""
 <style>
-[data-testid="collapsedControl"] {
-    display: block;
+
+/* Show sidebar toggle button */
+button[kind="header"] {
+    display: inline-flex !important;
+    visibility: visible !important;
+    opacity: 1 !important;
 }
+
+/* Keep collapsed control visible */
+[data-testid="collapsedControl"] {
+    display: flex !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+}
+
 </style>
 """, unsafe_allow_html=True)
 
