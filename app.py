@@ -8,7 +8,7 @@ import joblib
 import os
 import warnings
 warnings.filterwarnings('ignore')
-# ── Page config ───────────────────────────────────────────────────────────────
+
 st.set_page_config(
     page_title="Toronto Bus Delay Forecasting",
     page_icon="🚌",
@@ -16,7 +16,14 @@ st.set_page_config(
     initial_sidebar_state="expanded"
 )
 
-# ── Custom CSS ────────────────────────────────────────────────────────────────
+st.markdown("""
+<style>
+[data-testid="collapsedControl"] {
+    display: block;
+}
+</style>
+""", unsafe_allow_html=True)
+
 st.markdown("""
 <style>
     @import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;600&display=swap');
