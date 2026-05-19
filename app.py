@@ -499,7 +499,7 @@ elif page == "🤖  Predict Delay":
 # ══════════════════════════════════════════════════════════════════════════════
 elif page == "📈  Model Comparison":
     st.markdown("# 📈 Model Comparison")
-    st.markdown("Compare ARIMA, SARIMA, Prophet, and LSTM performance on the TTC test set.")
+    st.markdown("Comparing ARIMA, SARIMA, Prophet, and LSTM performance on the TTC test set.")
     st.markdown("---")
 
     ts = load_ts()
