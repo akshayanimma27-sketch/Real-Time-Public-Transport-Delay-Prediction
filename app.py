@@ -487,7 +487,6 @@ elif page == "📈  Model Comparison":
 
     # Load results if available
     results_path = 'reports/final_model_comparison.csv'
-    st.write("File exists:", os.path.exists(results_path))
     if os.path.exists(results_path):
         results = pd.read_csv(results_path)
         results['RMSE'] = pd.to_numeric(results['RMSE'], errors='coerce')
